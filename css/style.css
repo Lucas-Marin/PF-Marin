@@ -130,7 +130,7 @@ img:hover{
 /* media queryes */
 
 /*BreackPoint Mobil*/
-@media  (min-width: 320px) and (max-width: 1024px)  {
+@media  (min-width: 320px) and (max-width: 900px)  {
     .productos_destacados {
         align-items: center;
         display: grid;
@@ -154,6 +154,38 @@ img:hover{
         grid-template-columns: repeat(auto-fit, minmax(150pxpx, 1fr));
         gap: 10px;
     }
+    .productos_general{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+    }
+    }
+    @media  (min-width: 900px) and (max-width: 1300px) {
+        .productos_destacados {
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 10px;
+        }
+        .categorias{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 10px;
+        }
+        .entes_bancarios img{
+            width: 20px;
+            height: 20px;
+        }
+        .entes_bancarios{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150pxpx, 1fr));
+            gap: 10px;
+        }
+        .productos_general{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 10px;
+        }
     }
 
 
