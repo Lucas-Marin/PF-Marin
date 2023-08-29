@@ -19,12 +19,12 @@ body{
 }
 /* Header */
 body header{
-  
     width: 100%;
 }
 .banner_promocion{
     background-color:rgb(243, 167, 85) ;
     border: 1px black solid;
+    width: 100%;
 }
 .index{
     font-family: 'Dancing Script', cursive;
@@ -43,32 +43,34 @@ body header{
     display:flex;
     justify-content:space-between ;
 }
+
 .navegacion_lateral{
     color: black;
-    background-color: aqua;
-    width: 7rem;
+    background-color: burlywood;
+    width: 8rem;
 }
 .ingreso{
     color: black;
     background-color: burlywood;
-    width: 15rem;
-    height: 1.5rem;
+    width: 10rem;
+    height: 2rem;
     display: flex;
-    justify-content:center;   
+    align-items: center;
+    justify-content: space-around;
 }
 div ul li{
    display: inline-block;
-}
+   margin-left: 5px;
+   margin-right: 5px;
+   }
 /* MAIN, imagenes principalmente */
 
 .categorias{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-}
+    }
 main section img{
     width: 400px;
-    
 }
 main section h2{
     text-align: center;
@@ -77,10 +79,15 @@ iframe{
     position: relative;
     left: 42%;
 }
+
 .productos_destacados {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+.productos_destacados img{
+    height: 350px;
+    width: 390px;
 }
 h1{
     text-align: center;
@@ -101,15 +108,21 @@ footer img{
 /*estilos de pagina "todos" */
 .productos_general{
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, auto-fit);
 }
 .productos_general img{
     border: 2px solid black;
     margin: 10px;
     height: 300px;
 }
+
+
+
 /*Pseudoclases*/
 a:hover{
+    text-transform: uppercase;
+}
+.desplegable:hover{
     text-transform: uppercase;
 }
 img:hover{
@@ -117,8 +130,37 @@ img:hover{
 }
 
 /* media queryes */
-@media  (max-width: 480px) {
-     body{
-     background-color: blue;
-     }
+
+/*BreackPoint Mobil*/
+@media  (min-width: 320px) and (max-width: 1024px)  {
+    .productos_destacados {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 10px;
     }
+    .categorias{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 10px;
+    }
+    iframe {
+        display: none;
+    }
+    .entes_bancarios img{
+        width: 20px;
+        height: 20px;
+    }
+    .entes_bancarios{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150pxpx, 1fr));
+        gap: 10px;
+    }
+    }
+
+
+
+
+
+
+
