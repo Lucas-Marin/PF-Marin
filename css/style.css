@@ -108,15 +108,13 @@ footer img{
 /*estilos de pagina "todos" */
 .productos_general{
     display: grid;
-    grid-template-columns: repeat(4, auto-fit);
+    grid-template-columns: repeat(4, 1fr)
 }
 .productos_general img{
     border: 2px solid black;
     margin: 10px;
     height: 300px;
 }
-
-
 
 /*Pseudoclases*/
 a:hover{
