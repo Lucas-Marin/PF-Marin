@@ -26,7 +26,8 @@ body header{
     border: 1px black solid;
     width: 100%;
 }
-.index{
+h1{
+    text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size:50px;
 }
@@ -38,7 +39,7 @@ body header{
     font-family: 'Ruwudu', serif;
     font-size: 30px;
 }
-.links{
+.navegacion{
     color: black;
     display:flex;
     justify-content:space-between ;
@@ -49,7 +50,7 @@ body header{
     background-color: burlywood;
     width: 8rem;
 }
-.ingreso{
+.navegacion_ingreso{
     color: black;
     background-color: burlywood;
     width: 10rem;
@@ -69,10 +70,11 @@ div ul li{
     display: flex;
     justify-content: space-between;
     }
-main section img{
+.categorias img{
     width: 400px;
+    height: 400px;
 }
-main section h2{
+.productos h2{
     text-align: center;
 }
 iframe{
@@ -89,9 +91,7 @@ iframe{
     height: 350px;
     width: 390px;
 }
-h1{
-    text-align: center;
-}
+
 
 /* footer */
 .navegacion_footer{
@@ -105,7 +105,7 @@ footer img{
     grid-template-columns: repeat(12, auto); 
 }
 
-/*estilos de pagina "todos" */
+/*estilos de paginas con productos */
 .productos_general{
     display: grid;
     grid-template-columns: repeat(4, 1fr)
@@ -114,6 +114,7 @@ footer img{
     border: 2px solid black;
     margin: 10px;
     height: 300px;
+    width: 400px;
 }
 
 /*Pseudoclases*/
@@ -160,6 +161,7 @@ img:hover{
         gap: 10px;
     }
     }
+    /*BreackPoint intermedio*/
     @media  (min-width: 900px) and (max-width: 1300px) {
         .productos_destacados {
             align-items: center;
