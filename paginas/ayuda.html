@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Te Ayudo? Arena</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -24,23 +25,31 @@
                 <li class="link-nav"><a href="../index.html"><strong>Inicio</strong></a></li>
 
 
-                <ul>
-                    <li class="sub-link-nav"><a href="todos.html"><strong>Productos</strong></a></li>
-                    <li class="sub-link-nav"><a href="borcegos.html">Borcegos</a></li>
-                    <li class="sub-link-nav"><a href="tejanas.html">Tejanas</a></li>
-                    <li class="sub-link-nav"><a href="cana_corta.html">Caña Corta</a></li>
-                    <li class="sub-link-nav"><a href="cana_larga.html">Caña Larga</a></li>
-                </ul>
-                </li>
 
-                <li class="link-nav"><a href="cambios.html"><strong>Cambios</strong></a></li>
-                <li class="link-nav"><a href="ayuda.html"><strong>Ayuda</strong></a></li>
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a href="todos.html"><strong>Productos</strong></a>
+                    <a href="#" data-bs-toggle="dropdown"><i class=' desplegable bx bx-chevron-down'></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./borcegos.html"><strong>Borcegos</strong></a></li>
+                            <li><a class="dropdown-item" href="./tejanas.html"><strong>Tejanas</strong></a></li>
+                            <li><a class="dropdown-item" href="./cana_corta.html"><strong>Caña Corta</strong></li>
+                            <li><a class="dropdown-item" href="./cana_larga.html"><strong>Caña Larga</strong></a></li>
+                        </ul>
+                    </li>
+                
+                
+            </ul>
+
+
+            <li class="link-nav"><a href="cambios.html"><strong>Cambios</strong></a></li>
+            <li class="link-nav"><a href="ayuda.html"><strong>Ayuda</strong></a></li>
             </ul>
             <div class="navegacion_ingreso">
                 <ul>
-                    <li><a href=""><i class='bx bx-sm bx-user-circle bx-flashing' ></i></i></a></li>
-                    <li><a href=""><i class='bx bx-sm bx-heart bx-burst' ></i></i></a></li>
-                    <li><a href=""><i class='bx bx-sm bxs-shopping-bag bx-tada bx-flip-horizontal' ></i></i></a></li>
+                    <li><a href=""><i class='bx bx-sm bx-user-circle bx-flashing'></i></i></a></li>
+                    <li><a href=""><i class='bx bx-sm bx-heart bx-burst'></i></i></a></li>
+                    <li><a href=""><i class='bx bx-sm bxs-shopping-bag bx-tada bx-flip-horizontal'></i></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -49,19 +58,29 @@
 
     <main>
         <h1>TENES UN PROBLEMA? PUES...NO LO TENGAS, DE NADA</h1>
+        
+            <h2>Dejanos tu Consulta</h2>
         <section class="consulta">
-            <p>Dejanos tu consulta</p>
-            <form action="" class="formulario">
-                <div class="form_control">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="tu nombre aqui" id="nombre">
+            <form class="row gy-2 gx-3 align-items-center">
+                <div class="col-auto">
+                  <label class="" for="autoSizingInput">Nombre</label>
+                  <input type="text" class="form-control" id="autoSizingInput" placeholder="Juan Perez">
                 </div>
-                <div class="form_control">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" cols="30" rows="1" placeholder="Tu Mensaje Aqui"></textarea>
+                <div class="col-auto">
+                  <label class="" for="autoSizingInputGroup">Mail</label>
+                  <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Juan@perez.com">
+                  </div>
                 </div>
-
-            </form>
+                <div class="mb-3">
+                    <label  class="form-label">Contanos tu experiencia</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+                  </div>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-outline-danger">Enviar</button>
+                </div>
+              </form>
         </section>
     </main>
     <footer>
@@ -92,5 +111,6 @@
 
     </footer>
 </body>
+<script src="../JS/bootstrap.bundle.min.js"></script>
 
 </html>

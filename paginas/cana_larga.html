@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caña Larga Arena</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -25,11 +26,16 @@
 
 
                 <ul>
-                    <li class="sub-link-nav"><a href="todos.html"><strong>Productos</strong></a></li>
-                    <li class="sub-link-nav"><a href="borcegos.html">Borcegos</a></li>
-                    <li class="sub-link-nav"><a href="tejanas.html">Tejanas</a></li>
-                    <li class="sub-link-nav"><a href="cana_corta.html">Caña Corta</a></li>
-                    <li class="sub-link-nav"><a href="cana_larga.html">Caña Larga</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="./todos.html"><strong>Productos</strong></a>
+                    <a href="#" data-bs-toggle="dropdown"><i class=' desplegable bx bx-chevron-down'></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./borcegos.html"><strong>Borcegos</strong></a></li>
+                            <li><a class="dropdown-item" href="./tejanas.html"><strong>Tejanas</strong></a></li>
+                            <li><a class="dropdown-item" href="./cana_corta.html"><strong>Caña Corta</strong></li>
+                            <li><a class="dropdown-item" href="./cana_larga.html"><strong>Caña Larga</strong></a></li>
+                        </ul>
+                    
                 </ul>
                 </li>
 
@@ -88,5 +94,5 @@
 
     </footer>
 </body>
-
+<script src="../JS/bootstrap.bundle.min.js"></script>
 </html>

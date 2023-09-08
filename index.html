@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arena Calzados</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -26,22 +27,28 @@
         <!--navegacion sobre pagina-->
         <nav class="navegacion">
             <ul class="navegacion_lateral">
+
                 <li class="link-nav"><a href="index.html"><strong>Inicio</strong></a></li>
 
-                <li class="link-nav"><a href="paginas/todos.html"><strong>Productos</strong></a></li>
-                <ul>
-                    <li class="sub-link-nav"><a href="paginas/borcegos.html">Borcegos</a></li>
-                    <li class="sub-link-nav"><a href="paginas/tejanas.html">Tejanas</a></li>
-                    <li class="sub-link-nav"><a href="paginas/cana_corta.html">Caña Corta</a></li>
-                    <li class="sub-link-nav"><a href="paginas/cana_larga.html">Caña Larga</a></li>
-                </ul>
+                <li class="link-nav nav-item dropdown">
+                    <a href="paginas/todos.html"><strong>Productos</strong></a>
+                    <a href="#" data-bs-toggle="dropdown"><i class=' desplegable bx bx-chevron-down'></i></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="paginas/borcegos.html"><strong>Borcegos</strong></a></li>
+                        <li><a class="dropdown-item" href="paginas/tejanas.html"><strong>Tejanas</strong></a></li>
+                        <li><a class="dropdown-item" href="paginas/cana_corta.html"><strong>Caña Corta</strong></li>
+                        <li><a class="dropdown-item" href="paginas/cana_larga.html"><strong>Caña Larga</strong></a></li>
+                    </ul>
+                </li>
                 <li class="link-nav"><a href="paginas/cambios.html"><strong>Cambios</strong></a></li>
                 <li class="link-nav"><a href="paginas/ayuda.html"><strong>Ayuda</strong></a></li>
             </ul>
+
             <!--fin navegacion sobre pagina-->
             <!--navegacion usuario-->
-            <div class="navegacion_ingreso">
-                <ul>
+            <div>
+                <ul class="navegacion_ingreso">
                     <li><a href=""><i class='bx bx-sm bx-user-circle bx-flashing'></i></i></a></li>
                     <li><a href=""><i class='bx bx-sm bx-heart bx-burst'></i></i></a></li>
                     <li><a href=""><i class='bx bx-sm bxs-shopping-bag bx-tada bx-flip-horizontal'></i></i></a></li>
@@ -53,7 +60,7 @@
     </header>
 
     <main>
-    <!--categorias-->
+        <!--categorias-->
         <section class="categorias">
 
             <a href="paginas/cana_larga.html"><img src="./imagenes/caña.alta.png" alt="foto de bota caña alta"></a>
@@ -105,5 +112,6 @@
     </footer>
 
 </body>
+<script src="./JS/bootstrap.bundle.min.js"></script>
 
 </html>
