@@ -15,14 +15,14 @@
 <body>
     <header>
         <!--parte principal de pagina-->
-        <div class="bienvenidos">
+        <article class="bienvenidos">
             <p class="banner_promocion"><strong>3 y 6 CUOTAS SIN INTERES</strong> </p>
             <div>
                 <p> <a class="arena" href="./index.html"> Arena Calzados</a></p>
                 <h1 class="index">New Collection At-Wn 2023</h1>
                 <h3>Envíos a todo el país</h3>
             </div>
-        </div>
+        </article>
         <!--fin parte principal pagina-->
         <!--navegacion sobre pagina-->
         <nav class="navegacion">
@@ -49,9 +49,11 @@
             <!--navegacion usuario-->
             <div>
                 <ul class="navegacion_ingreso">
-                    <li><a href=""><i class='bx bx-sm bx-user-circle bx-flashing'></i></i></a></li>
-                    <li><a href=""><i class='bx bx-sm bx-heart bx-burst'></i></i></a></li>
-                    <li><a href=""><i class='bx bx-sm bxs-shopping-bag bx-tada bx-flip-horizontal'></i></i></a></li>
+                    <li><a href=""><i class=' icono_ingreso bx bx-sm bx-user-circle bx-flashing'></i></i></a></li>
+                    <li><a href=""><i class=' icono_ingreso bx bx-sm bx-heart bx-burst'></i></i></a></li>
+                    <li><a href=""><i
+                                class=' icono_ingreso bx bx-sm bxs-shopping-bag bx-tada bx-flip-horizontal'></i></i></a>
+                    </li>
                 </ul>
             </div>
             <!--fin navegacion usuario-->
@@ -74,12 +76,38 @@
             <h2 class="nexo">Conoce nuestros productos destacados</h2>
             <iframe src="https://giphy.com/embed/5VKbvrjxpVJCM"></iframe>
 
-            <div class="productos_destacados">
-                <img src="./imagenes/borcego_2.png" alt="borcego">
-                <img src="./imagenes/tejana_2.png" alt="tejana negra">
-                <img src="./imagenes/caña.alta_2.png" alt="caña alta negra">
-                <img src="./imagenes/caña.corta_2.png" alt="caña corta marron">
-            </div>
+            <article class="productos_destacados">
+
+                <div><img src="./imagenes/borcego_2.png" alt="borcego">
+                    <div class="tarjeta_articulo">
+                        <p>Borcego Chica Rockera</p>
+                        <p>colores disponibles: <span class="color_negro">negro </span><span class="color_blanco">blanco </span><span class="color_suela">suela</span></p></p>
+                        <p>talles disponibles: <span>35</span> <span>36</span> <span>37</span> <span>38</span></p>
+                    </div>
+                </div>
+                <div><img src="./imagenes/tejana_2.png" alt="tejana negra">
+                    <div class="tarjeta_articulo">
+                        <p>El Cercano Oeste</p>
+                        <p>colores disponibles: <span class="color_negro">negro </span><span class="color_blanco">blanco </span><span class="color_suela">suela</span></p></p>
+                        <p>talles disponibles: <span>35</span> <span>36</span> <span>37</span> <span>38</span></p>
+                    </div>
+                </div>
+                <div><img src="./imagenes/caña.alta_2.png" alt="caña alta negra">
+                    <div class="tarjeta_articulo">
+                        <p>Para la Lluvian't</p>
+                        <p>colores disponibles: <span class="color_negro">negro </span><span class="color_blanco">blanco </span><span class="color_suela">suela</span></p>
+                        <p>talles disponibles: <span>35</span> <span>36</span> <span>37</span> <span>38</span>
+                        </p>
+                    </div>
+                </div>
+                <div><img src="./imagenes/caña.corta_2.png" alt="caña corta marron">
+                    <div class="tarjeta_articulo">
+                        <p>Peor es Nada</p>
+                        <p>colores disponibles: <span class="color_negro">negro </span><span class="color_blanco">blanco </span><span class="color_suela">suela</span></p></p>
+                        <p>talles disponibles: <span>35</span> <span>36</span> <span>37</span> <span>38</span></p>
+                    </div>
+                </div>
+            </article>
         </section>
         <!--fin productos destacados de tienda-->
     </main>
@@ -110,8 +138,9 @@
             <img src="./imagenes/mercado.png" alt="mercado pago">
         </div>
     </footer>
-
+    <!--BootStrap JS-->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
-<script src="./JS/bootstrap.bundle.min.js"></script>
+
 
 </html>
