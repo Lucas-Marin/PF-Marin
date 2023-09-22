@@ -42,7 +42,7 @@ h1 {
   font-size: 80px;
 }
 
-h2 {
+h3 {
   margin-top: 8px;
   text-decoration: underline;
   color: rgb(11, 192, 192);
@@ -65,6 +65,7 @@ h2 {
   color: black;
   display: flex;
   justify-content: space-between;
+  font-size: 17px;
 }
 .navegacion .navegacion_lateral {
   display: flex;
@@ -76,28 +77,24 @@ h2 {
 .navegacion .navegacion_lateral .desplegable {
   font-size: 20px;
 }
-.navegacion .navegacion_ingreso {
+
+.navegacion_ingreso {
   color: black;
   height: 2rem;
   width: 11rem;
   display: flex;
-  justify-content: space-between;
-}
-.navegacion .navegacion_ingreso div ul li {
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
+  justify-content: space-around;
 }
 
 /* MAIN, imagenes principalmente */
 .categorias {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .categorias img {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
 }
 
 .productos h2 {
@@ -144,8 +141,8 @@ iframe {
 }
 
 .productos_destacados img {
-  height: 350px;
-  width: 390px;
+  height: 340px;
+  width: 380px;
 }
 
 /*pagina ayuda*/
@@ -185,6 +182,15 @@ footer img {
   width: 400px;
 }
 
+/* estilos pagina ayuda */
+.mail {
+  transform: translate(100px);
+}
+
+.btn {
+  color: rgb(11, 192, 192);
+}
+
 /*Pseudoclases*/
 .desplegable:hover {
   text-transform: uppercase;
@@ -199,17 +205,59 @@ footer img {
 }
 
 .icono_ingreso:hover {
-  background-color: rgb(233, 160, 26);
+  background-color: rgb(248, 198, 144);
 }
 
 img:hover {
   opacity: 1;
+  transform: scale(1.05);
 }
 
+/*BreackPoint Intermedio*/
+@media (min-width: 901px) and (max-width: 1200px) {
+  .navegacion_lateral {
+    flex-direction: column;
+    color: black;
+    margin-bottom: 100px;
+  }
+  .banner_promocion {
+    position: static;
+    left: 1000px;
+  }
+  .productos_destacados {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+  }
+  .categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+  }
+  iframe {
+    display: none;
+  }
+  .entes_bancarios img {
+    width: 20px;
+    height: 20px;
+  }
+  .entes_bancarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150pxpx, 1fr));
+    gap: 10px;
+  }
+  .productos_general {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+  }
+}
 /*BreackPoint Mobil*/
 @media (min-width: 320px) and (max-width: 900px) {
   .navegacion_lateral {
-    display: inline-block;
+    display: none;
+    flex-direction: column;
     color: black;
     margin-bottom: 100px;
   }
@@ -241,7 +289,7 @@ img:hover {
   }
   .productos_general {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
   }
 }

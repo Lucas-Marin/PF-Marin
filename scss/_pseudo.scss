@@ -1,16 +1,19 @@
+@import "./variables";
 /*Pseudoclases*/
 .desplegable:hover {
     text-transform: uppercase;
   }
   .dropdown-item:hover {
-    background-color: rgb(248, 198, 144);
+    background-color: $color-hover;
   }
   .link-nav:hover {
     background-color: rgb(233, 160, 26);
   }
   .icono_ingreso:hover {
-    background-color: rgb(233, 160, 26);
+    background-color: $color-hover;
   }
   img:hover {
     opacity: 1;
+    transform: scale(1.05);
   }
+  

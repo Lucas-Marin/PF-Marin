@@ -1,10 +1,53 @@
-/*BreackPoint Mobil*/
-@media (min-width: 320px) and (max-width: 900px) {
+  /*BreackPoint Intermedio*/
+  @media (min-width: 901px) and (max-width: 1200px) {
+    
     .navegacion_lateral {
-      display: inline-block;
+      flex-direction: column;
       color: black;
       margin-bottom: 100px;
     }
+    .banner_promocion {
+      position:static;
+      left: 1000px;
+    }
+    .productos_destacados {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 10px;
+    }
+    .categorias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 10px;
+    }
+    iframe {
+      display: none;
+    }
+    .entes_bancarios img {
+      width: 20px;
+      height: 20px;
+    }
+    .entes_bancarios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150pxpx, 1fr));
+      gap: 10px;
+    }
+    .productos_general {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 10px;
+    }
+  }
+/*BreackPoint Mobil*/
+@media (min-width: 320px) and (max-width: 900px) {
+  
+  .navegacion_lateral {
+    display: none;
+    flex-direction: column;
+    color: black;
+    margin-bottom: 100px;
+  }
     .banner_promocion {
       width: 100%;
     }
@@ -33,7 +76,8 @@
     }
     .productos_general {
       display: grid;
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 10px;
     }
   }
+

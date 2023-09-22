@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ruwudu:wght@500&display=swap");
 
 @import "./reset";
+@import "./variables";
 
 /* Body en general */
 body {
-  background-color: rgb(245, 208, 171);
+  background-color: $bgcolor;
 }
 /* Header */
 body header {
@@ -19,15 +20,15 @@ body header {
 
 h1 {
   font-weight: 600;
-  color: rgb(11, 192, 192);
+  color: $color-titulos;
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 80px;
 }
-h2 {
+h3 {
   margin-top: 8px;
   text-decoration: underline;
-  color: rgb(11, 192, 192);
+  color: $color-titulos;
   text-align: center;
   font-family: "Ruwudu", serif;
   font-size: 50px;
@@ -40,43 +41,41 @@ h2 {
   font-family: "Ruwudu", serif;
   font-size: 42px;
 }
+
 .navegacion {
   color: black;
   display: flex;
   justify-content: space-between;
+  font-size: 17px;
   .navegacion_lateral {
     display: flex;
     justify-content: space-between;
     color: black;
-
     width: 31rem;
     height: 2rem;
     .desplegable {
-      font-size: 20px;
+    font-size: 20px;
     }
   }
 }
+
 .navegacion_ingreso {
   color: black;
   height: 2rem;
   width: 11rem;
   display: flex;
-  justify-content: space-between;
-  div ul li {
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+  justify-content: space-around;
+  
 }
 
 /* MAIN, imagenes principalmente */
 .categorias {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .categorias img {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
 }
 .productos h2 {
   text-align: center;
@@ -120,8 +119,8 @@ iframe {
   }
 }
 .productos_destacados img {
-  height: 350px;
-  width: 390px;
+  height: 340px;
+  width: 380px;
 }
 /*pagina ayuda*/
 .consulta {
@@ -154,6 +153,13 @@ footer img {
   margin: 10px;
   height: 300px;
   width: 400px;
+}
+/* estilos pagina ayuda */
+.mail{
+  transform: translate(100px)
+}
+.btn{
+  color: rgb(11, 192, 192)
 }
 @import "./pseudo";
 @import "./queryes";
