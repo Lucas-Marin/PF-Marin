@@ -17,7 +17,6 @@ body header {
   border: 1px black solid;
   width: 100%;
 }
-
 h1 {
   font-weight: 600;
   color: $color-titulos;
@@ -51,7 +50,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     color: black;
-    width: 31rem;
+    width: 40rem;
     height: 2rem;
     .desplegable {
     font-size: 20px;
@@ -86,18 +85,18 @@ iframe {
 }
 
 .productos_destacados {
-  align-items: center;
+  margin-left: 45px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   div {
-    width: 390px;
+    width: 380px;
   }
   div p {
     margin-bottom: 1px;
     font-weight: bold;
   }
   div span {
-    margin-left: 5px;
+    margin-left: 3px;
   }
   .tarjeta_articulo {
     background-color: rgb(255, 255, 255);
@@ -126,6 +125,17 @@ iframe {
 .consulta {
   display: flex;
   justify-content: center;
+}
+/*Pagina cambios*/
+.cambios{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.cambios-no{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
 }
 /* footer */
 .navegacion_footer {

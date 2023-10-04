@@ -71,7 +71,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   color: black;
-  width: 31rem;
+  width: 40rem;
   height: 2rem;
 }
 .navegacion .navegacion_lateral .desplegable {
@@ -107,19 +107,19 @@ iframe {
 }
 
 .productos_destacados {
-  align-items: center;
+  margin-left: 45px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 .productos_destacados div {
-  width: 390px;
+  width: 380px;
 }
 .productos_destacados div p {
   margin-bottom: 1px;
   font-weight: bold;
 }
 .productos_destacados div span {
-  margin-left: 5px;
+  margin-left: 3px;
 }
 .productos_destacados .tarjeta_articulo {
   background-color: rgb(255, 255, 255);
@@ -149,6 +149,19 @@ iframe {
 .consulta {
   display: flex;
   justify-content: center;
+}
+
+/*Pagina cambios*/
+.cambios {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cambios-no {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 /* footer */
